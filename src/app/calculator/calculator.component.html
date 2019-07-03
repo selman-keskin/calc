@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header text-center"> CALCULATOR </div>
+  <div class="card-body">
+    <div class="form-group d-flex flex-row">
+      <input [(ngModel)]="num1" type="number" name="num1" class="form-control">
+      <input [(ngModel)]="num2" type="number" name="num2" class="form-control">
+    </div>
+
+    <div class="d-flex flex-row justify-content-between">
+        <button class="btn btn-success" (click)="sum()"> Summation </button>
+        <button class="btn btn-primary" (click)="sub()"> Subtraction </button>
+        <button class="btn btn-danger" (click)="multi()"> Multiplication </button>
+        <button class="btn btn-warning" (click)="div()"> Division </button>
+        <button class="btn btn-success" (click)="and()"> Bitwise AND </button>
+        <button class="btn btn-primary" (click)="or()"> Bitwise OR </button>
+        <button class="btn btn-danger" (click)="xor()"> Bitwise XOR </button>
+    </div>
+
+    <div class="card-footer">
+      <h4> Caluculation... </h4>
+      <h4> {{resultText}} <span style="color:blue">{{num1}}</span> and <span style="color:blue">{{num2}}</span> is <span style="color:red">{{result}}</span>.</h4>
+    </div>
+  </div>
+</div>
